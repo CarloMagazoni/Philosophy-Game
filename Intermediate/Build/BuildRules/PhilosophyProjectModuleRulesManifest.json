@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"G:\\Projects\\PhilosophyProject\\UE4\\PhilosophyProject\\Source\\PhilosophyProject\\PhilosophyProject.Build.cs",
+		"G:\\Projects\\PhilosophyProject\\UE4\\PhilosophyProject\\Source\\PhilosophyProject.Target.cs",
+		"G:\\Projects\\PhilosophyProject\\UE4\\PhilosophyProject\\Source\\PhilosophyProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.1"
+}

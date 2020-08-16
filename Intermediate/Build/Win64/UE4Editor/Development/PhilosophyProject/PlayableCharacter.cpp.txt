@@ -1,0 +1,11 @@
+G:\Projects\PhilosophyProject\UE4\PhilosophyProject\Intermediate\Build\Win64\UE4Editor\Development\PhilosophyProject\Definitions.PhilosophyProject.h
+G:\Projects\PhilosophyProject\UE4\PhilosophyProject\Source\PhilosophyProject\Entities\PlayableCharacter.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+G:\Projects\PhilosophyProject\UE4\PhilosophyProject\Intermediate\Build\Win64\UE4Editor\Inc\PhilosophyProject\PlayableCharacter.generated.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h

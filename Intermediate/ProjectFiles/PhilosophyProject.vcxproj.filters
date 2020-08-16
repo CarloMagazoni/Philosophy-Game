@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PhilosophyProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{85FAD521-8CE4-4F6D-A522-F3082BB5AFA9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PhilosophyProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PhilosophyProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{EEC21840-46C3-482C-842C-9A25C96E47BA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PhilosophyProject">
+      <UniqueIdentifier>{CD1C90C4-FD2F-4119-B2CF-4FCC74A7DCB6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PhilosophyProject\PhilosophyProject.Build.cs">
+      <Filter>Source\PhilosophyProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PhilosophyProject\PhilosophyProject.cpp">
+      <Filter>Source\PhilosophyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PhilosophyProject\PhilosophyProject.h">
+      <Filter>Source\PhilosophyProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PhilosophyProject\PhilosophyProjectGameModeBase.cpp">
+      <Filter>Source\PhilosophyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PhilosophyProject\PhilosophyProjectGameModeBase.h">
+      <Filter>Source\PhilosophyProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\PhilosophyProject\Entities">
+      <UniqueIdentifier>{DEB998CB-9512-43F4-9004-61092554BA05}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PhilosophyProject\Entities\PlayableCharacter.cpp">
+      <Filter>Source\PhilosophyProject\Entities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PhilosophyProject\Entities\PlayableCharacter.h">
+      <Filter>Source\PhilosophyProject\Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
