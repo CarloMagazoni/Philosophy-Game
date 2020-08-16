@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "PhilosophyProject",
-			"Path": "G:\\Projects\\PhilosophyProject\\UE4\\PhilosophyProject\\Source\\PhilosophyProject.Target.cs",
+			"Path": "C:\\Unreal_git\\Philosophy-Game\\Source\\PhilosophyProject.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "PhilosophyProjectEditor",
-			"Path": "G:\\Projects\\PhilosophyProject\\UE4\\PhilosophyProject\\Source\\PhilosophyProjectEditor.Target.cs",
+			"Path": "C:\\Unreal_git\\Philosophy-Game\\Source\\PhilosophyProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
