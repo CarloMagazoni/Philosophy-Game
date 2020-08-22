@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayableCharacter, 1291888838);
+	IMPLEMENT_CLASS(APlayableCharacter, 1104911412);
 	template<> PHILOSOPHYPROJECT_API UClass* StaticClass<APlayableCharacter>()
 	{
 		return APlayableCharacter::StaticClass();
