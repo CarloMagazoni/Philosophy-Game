@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "PhilosophyProject",
-			"Path": "C:\\Unreal_git\\Philosophy-Game\\Source\\PhilosophyProject.Target.cs",
+			"Path": "G:\\Polytech Game\\Philosophy-Game\\Source\\PhilosophyProject.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "PhilosophyProjectEditor",
-			"Path": "C:\\Unreal_git\\Philosophy-Game\\Source\\PhilosophyProjectEditor.Target.cs",
+			"Path": "G:\\Polytech Game\\Philosophy-Game\\Source\\PhilosophyProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

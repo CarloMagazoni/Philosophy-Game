@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodePhilosophyProjectGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APhilosophyProjectGameModeBase, 3699347242);
+	IMPLEMENT_CLASS(APhilosophyProjectGameModeBase, 2484568229);
 	template<> PHILOSOPHYPROJECT_API UClass* StaticClass<APhilosophyProjectGameModeBase>()
 	{
 		return APhilosophyProjectGameModeBase::StaticClass();
