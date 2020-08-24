@@ -26,8 +26,7 @@ public:
 	UCameraComponent* CameraComponent;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player")
-	UStaticMeshComponent* MeshComponent;
-
+	UStaticMeshComponent* HairMeshComponent;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -41,8 +40,13 @@ protected:
 	float BaseTurnRate;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	float BaseLookUpRate;
+	UPROPERTY(BlueprintReadOnly)
+	float ForwardAxisValue;
+	UPROPERTY(BlueprintReadOnly)
+	float RightAxisValue;
 
-public:	
+
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
