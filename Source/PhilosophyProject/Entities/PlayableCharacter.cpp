@@ -12,7 +12,7 @@
 // Sets default values
 APlayableCharacter::APlayableCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
@@ -20,9 +20,6 @@ APlayableCharacter::APlayableCharacter()
 
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
 	CameraComponent->SetupAttachment(SpringArmComponent);
-
-	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
-	MeshComponent->SetupAttachment(RootComponent);
 
 	BaseTurnRate = 45.0f;
 	BaseLookUpRate = 45.0f;
@@ -32,7 +29,7 @@ APlayableCharacter::APlayableCharacter()
 void APlayableCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 void APlayableCharacter::MoveForward(float Value)
@@ -45,8 +42,9 @@ void APlayableCharacter::MoveForward(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
 	}
+	ForwardAxisValue = Value;
 }
- 
+
 void APlayableCharacter::MoveRight(float Value)
 {
 	if ((Controller) && (Value != 0.0f))
@@ -57,6 +55,7 @@ void APlayableCharacter::MoveRight(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		AddMovementInput(Direction, Value);
 	}
+	RightAxisValue = Value;
 }
 
 void APlayableCharacter::TurnAtRate(float Value)
