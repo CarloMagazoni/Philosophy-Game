@@ -2,9 +2,6 @@ Binaries
 DerivedDataCache
 Intermediate
 Saved
-.vscode
-.vs
-*.VC.db
 *.opensdf
 *.opendb
 *.sdf
@@ -12,3 +9,4 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+.vs/PhilosophyProject/v16/ipch/AutoPCH/63686631ae5f689f/PLAYABLECHARACTER.ipch
