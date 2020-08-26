@@ -1,2 +1,2 @@
-C:\Users\ASUS\Documents\Unreal Projects\Philosophy-Game\Intermediate\Build\Win64\UE4Editor\Development\PhilosophyProject\Definitions.PhilosophyProject.h
-C:\Users\ASUS\Documents\Unreal Projects\Philosophy-Game\Source\PhilosophyProject\PhilosophyProject.h
+M:\Program Files\Polygame\Philosophy-Game\Intermediate\Build\Win64\UE4Editor\Development\PhilosophyProject\Definitions.PhilosophyProject.h
+M:\Program Files\Polygame\Philosophy-Game\Source\PhilosophyProject\PhilosophyProject.h
