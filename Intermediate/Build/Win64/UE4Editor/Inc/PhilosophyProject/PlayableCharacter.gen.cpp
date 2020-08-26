@@ -35,6 +35,18 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YawAxisValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_YawAxisValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RightAxisValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RightAxisValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ForwardAxisValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ForwardAxisValue;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
@@ -43,9 +55,9 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HairMeshComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HairMeshComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraComponent_MetaData[];
 #endif
@@ -70,6 +82,27 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_YawAxisValue_MetaData[] = {
+		{ "Category", "PlayableCharacter" },
+		{ "ModuleRelativePath", "Entities/PlayableCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_YawAxisValue = { "YawAxisValue", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, YawAxisValue), METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_YawAxisValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_YawAxisValue_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RightAxisValue_MetaData[] = {
+		{ "Category", "PlayableCharacter" },
+		{ "ModuleRelativePath", "Entities/PlayableCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RightAxisValue = { "RightAxisValue", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, RightAxisValue), METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RightAxisValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RightAxisValue_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_ForwardAxisValue_MetaData[] = {
+		{ "Category", "PlayableCharacter" },
+		{ "ModuleRelativePath", "Entities/PlayableCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_ForwardAxisValue = { "ForwardAxisValue", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, ForwardAxisValue), METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_ForwardAxisValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_ForwardAxisValue_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_BaseLookUpRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "ModuleRelativePath", "Entities/PlayableCharacter.h" },
@@ -84,13 +117,13 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0020080000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_BaseTurnRate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_MeshComponent_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_HairMeshComponent_MetaData[] = {
 		{ "Category", "Player" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Entities/PlayableCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_MeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_MeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_HairMeshComponent = { "HairMeshComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, HairMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_HairMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_HairMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_CameraComponent_MetaData[] = {
 		{ "Category", "Camera" },
@@ -108,9 +141,12 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_SpringArmComponent = { "SpringArmComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, SpringArmComponent), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_SpringArmComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_SpringArmComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayableCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_YawAxisValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RightAxisValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_ForwardAxisValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_BaseTurnRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_MeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_HairMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_CameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayableCharacter_Statics::NewProp_SpringArmComponent,
 	};
@@ -141,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayableCharacter, 1104911412);
+	IMPLEMENT_CLASS(APlayableCharacter, 3194271487);
 	template<> PHILOSOPHYPROJECT_API UClass* StaticClass<APlayableCharacter>()
 	{
 		return APlayableCharacter::StaticClass();

@@ -60,7 +60,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayableCharacter); \
 
 #define Philosophy_Game_Source_PhilosophyProject_Entities_PlayableCharacter_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(APlayableCharacter, BaseTurnRate); } \
-	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(APlayableCharacter, BaseLookUpRate); }
+	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(APlayableCharacter, BaseLookUpRate); } \
+	FORCEINLINE static uint32 __PPO__ForwardAxisValue() { return STRUCT_OFFSET(APlayableCharacter, ForwardAxisValue); } \
+	FORCEINLINE static uint32 __PPO__RightAxisValue() { return STRUCT_OFFSET(APlayableCharacter, RightAxisValue); } \
+	FORCEINLINE static uint32 __PPO__YawAxisValue() { return STRUCT_OFFSET(APlayableCharacter, YawAxisValue); }
 
 
 #define Philosophy_Game_Source_PhilosophyProject_Entities_PlayableCharacter_h_13_PROLOG
