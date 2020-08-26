@@ -33,8 +33,8 @@ protected:
 
 	void MoveForward(float Value);
 	void MoveRight(float Value);
-	void TurnAtRate(float Value);
-	void LookUpAtRate(float Value);
+	void LookRight(float Value);
+	void LookUp(float Value);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	float BaseTurnRate;
@@ -44,6 +44,8 @@ protected:
 	float ForwardAxisValue;
 	UPROPERTY(BlueprintReadOnly)
 	float RightAxisValue;
+	UPROPERTY(BlueprintReadOnly)
+	float YawAxisValue;
 
 
 public:

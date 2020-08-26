@@ -58,12 +58,13 @@ void APlayableCharacter::MoveRight(float Value)
 	RightAxisValue = Value;
 }
 
-void APlayableCharacter::TurnAtRate(float Value)
+void APlayableCharacter::LookRight(float Value)
 {
+	YawAxisValue = Value;
 	AddControllerYawInput(Value * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
-void APlayableCharacter::LookUpAtRate(float Value)
+void APlayableCharacter::LookUp(float Value)
 {
 	AddControllerPitchInput(Value * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
@@ -83,7 +84,7 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayableCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &APlayableCharacter::MoveRight);
 
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("Turn", this, &APlayableCharacter::LookRight);
+	PlayerInputComponent->BindAxis("LookUp", this, &APlayableCharacter::LookUp);
 }
 
