@@ -1,7 +1,7 @@
-C:\Unreal_git\Philosophy-Game\Intermediate\Build\Win64\UE4Editor\Development\PhilosophyProject\Definitions.PhilosophyProject.h
-C:\Unreal_git\Philosophy-Game\Source\PhilosophyProject\PhilosophyProjectGameModeBase.h
+C:\Users\ASUS\Documents\Unreal Projects\Philosophy-Game\Intermediate\Build\Win64\UE4Editor\Development\PhilosophyProject\Definitions.PhilosophyProject.h
+C:\Users\ASUS\Documents\Unreal Projects\Philosophy-Game\Source\PhilosophyProject\PhilosophyProjectGameModeBase.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Unreal_git\Philosophy-Game\Intermediate\Build\Win64\UE4Editor\Inc\PhilosophyProject\PhilosophyProjectGameModeBase.generated.h
+C:\Users\ASUS\Documents\Unreal Projects\Philosophy-Game\Intermediate\Build\Win64\UE4Editor\Inc\PhilosophyProject\PhilosophyProjectGameModeBase.generated.h
