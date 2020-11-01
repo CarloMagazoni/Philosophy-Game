@@ -23,6 +23,7 @@ APlayableCharacter::APlayableCharacter()
 
 	BaseTurnRate = 45.0f;
 	BaseLookUpRate = 45.0f;
+	InDialogue = false;
 }
 
 // Called when the game starts or when spawned
@@ -34,39 +35,51 @@ void APlayableCharacter::BeginPlay()
 
 void APlayableCharacter::MoveForward(float Value)
 {
-	if ((Controller) && (Value != 0.0f))
+	if (!InDialogue) 
 	{
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
+		if ((Controller) && (Value != 0.0f))
+		{
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+			AddMovementInput(Direction, Value);
+		}
+		ForwardAxisValue = Value;
 	}
-	ForwardAxisValue = Value;
 }
 
 void APlayableCharacter::MoveRight(float Value)
 {
-	if ((Controller) && (Value != 0.0f))
+	if (!InDialogue) 
 	{
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
+		if ((Controller) && (Value != 0.0f))
+		{
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		AddMovementInput(Direction, Value);
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+			AddMovementInput(Direction, Value);
+		}
+		RightAxisValue = Value;
 	}
-	RightAxisValue = Value;
 }
 
 void APlayableCharacter::LookRight(float Value)
 {
-	YawAxisValue = Value;
-	AddControllerYawInput(Value * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	if (!InDialogue) 
+	{
+		YawAxisValue = Value;
+		AddControllerYawInput(Value * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	}
 }
 
 void APlayableCharacter::LookUp(float Value)
 {
-	AddControllerPitchInput(Value * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	if (!InDialogue) 
+	{
+		AddControllerPitchInput(Value * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	}
 }
 
 // Called every frame
@@ -88,3 +101,32 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAxis("LookUp", this, &APlayableCharacter::LookUp);
 }
 
+bool APlayableCharacter::InDialogueGetter()
+{
+	return InDialogue;
+}
+
+void APlayableCharacter::InDialogueSetter(bool dia)
+{
+	InDialogue = dia;
+}
+
+float APlayableCharacter::BaseTurnGetter()
+{
+	return BaseTurnRate;
+}
+
+float APlayableCharacter::BaseLookUpGetter()
+{
+	return BaseLookUpRate;
+}
+
+void APlayableCharacter::BaseTurnSetter(float value)
+{
+	BaseTurnRate = value;
+}
+
+void APlayableCharacter::BaseLookUpSetter(float value)
+{
+	BaseLookUpRate = value;
+}
