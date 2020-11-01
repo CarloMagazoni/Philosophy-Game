@@ -36,9 +36,28 @@ protected:
 	void LookRight(float Value);
 	void LookUp(float Value);
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
+	UFUNCTION(BlueprintGetter)
+	bool InDialogueGetter();
+
+	UFUNCTION(BlueprintSetter)
+	void InDialogueSetter(bool dia);
+
+	UFUNCTION(BlueprintGetter)
+	float BaseTurnGetter();
+
+	UFUNCTION(BlueprintSetter)
+	void BaseTurnSetter(float value);
+
+	UFUNCTION(BlueprintGetter)
+	float BaseLookUpGetter();
+
+	UFUNCTION(BlueprintSetter)
+	void BaseLookUpSetter(float value);
+
+
+	UPROPERTY(BlueprintGetter = BaseTurnGetter, BlueprintSetter = BaseTurnSetter, Category = "Camera")
 	float BaseTurnRate;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
+	UPROPERTY(BlueprintGetter = BaseLookUpGetter, BlueprintSetter = BaseLookUpSetter, Category = "Camera")
 	float BaseLookUpRate;
 	UPROPERTY(BlueprintReadOnly)
 	float ForwardAxisValue;
@@ -46,7 +65,8 @@ protected:
 	float RightAxisValue;
 	UPROPERTY(BlueprintReadOnly)
 	float YawAxisValue;
-
+	UPROPERTY(BlueprintReadWrite, BlueprintGetter = InDialogueGetter, BlueprintSetter = InDialogueSetter)
+	bool InDialogue;
 
 public:
 	// Called every frame
